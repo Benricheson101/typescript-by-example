@@ -1,3 +1,6 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "./node_modules/gts",
+  "rules": {
+    "node/no-unpublished-import": 0
+  }
 }

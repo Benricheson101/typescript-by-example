@@ -5,18 +5,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "gts clean",
+    "fmt": "gts fix",
+    "posttest": "yarn run lint"
   },
   "dependencies": {
+    "clsx": "^1.1.1",
+    "gray-matter": "^4.0.3",
     "next": "12.0.4",
+    "prism-react-renderer": "^1.2.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-markdown": "^7.1.0"
   },
   "devDependencies": {
     "@types/node": "16.11.10",
+    "@types/prismjs": "^1.16.6",
     "@types/react": "17.0.37",
+    "autoprefixer": "^10.4.0",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
+    "gts": "^3.1.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19",
     "typescript": "4.5.2"
   }
 }
