@@ -7,5 +7,6 @@
 .vercel
 *.swp
 
-/.next/
+/.next
+/out
 /node_modules
