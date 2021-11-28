@@ -7,7 +7,7 @@
     "start": "next start",
     "lint": "next lint",
     "clean": "gts clean",
-    "fmt": "gts fix",
+    "fmt": "rustywind --write . && gts fix",
     "posttest": "yarn run lint"
   },
   "dependencies": {
@@ -28,6 +28,7 @@
     "eslint-config-next": "12.0.4",
     "gts": "^3.1.0",
     "postcss": "^8.4.4",
+    "rustywind": "^0.12.2",
     "tailwindcss": "^2.2.19",
     "typescript": "4.5.2"
   }

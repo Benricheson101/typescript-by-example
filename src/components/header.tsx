@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const Header: FunctionComponent = () => {
   return (
-    <h1 className="text-center text-3xl font-semibold mb-2">
+    <h1 className="mb-2 text-3xl font-semibold text-center">
       <Link href="/">
         <a>
           <span className="text-logo-typescript">

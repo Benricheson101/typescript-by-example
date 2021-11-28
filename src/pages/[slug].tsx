@@ -16,15 +16,15 @@ const ExamplePage: NextPage<{example: Example}> = ({example}) => {
 
       <div>
         <Header />
-        <h2 className="text-center text-2xl font-semibold mb-2">
+        <h2 className="mb-2 text-2xl font-semibold text-center">
           {example.meta.title}
         </h2>
 
-        <div className="flex md:flex-row flex-col md:divide-x md:divide-x-2 divide-gray-900 divide-y divide-y-2 md:divide-y-0">
-          <div className="md:w-1/2 md:pr-5 md:pb-0 pb-5">
+        <div className="flex flex-col divide-y-2 divide-y divide-gray-900 md:flex-row md:divide-y-0 md:divide-x-2 md:divide-x">
+          <div className="pb-5 md:pr-5 md:pb-0 md:w-1/2">
             <ReactMarkdown children={example.content} />
           </div>
-          <div className="md:w-1/2 md:pl-5 md:pt-0 pt-5">
+          <div className="pt-5 md:pt-0 md:pl-5 md:w-1/2">
             <CodeBlock code={example.code} />
           </div>
         </div>
